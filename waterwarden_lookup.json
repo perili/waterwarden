@@ -1,0 +1,56 @@
+{
+  "description": "WaterWarden strip classifier \u2014 centroid lookup table",
+  "note": "Classify by Euclidean distance in normalised RGB space [0,1].",
+  "app_inventor_tip": "Divide raw corrected_R/G/B by 255 before computing distance. Predict the label with minimum distance to its centroid.",
+  "val_exact_accuracy": 1.0,
+  "val_adjacent_accuracy": 1.0,
+  "labels_in_order": [
+    "0ppm",
+    "10ppm",
+    "25ppm",
+    "50ppm",
+    "100ppm"
+  ],
+  "centroids": {
+    "0ppm": {
+      "class_index": 0,
+      "mean_R": 0.9969,
+      "mean_G": 0.995,
+      "mean_B": 0.9793,
+      "std": 0.011,
+      "n_samples": 20
+    },
+    "10ppm": {
+      "class_index": 1,
+      "mean_R": 0.9705,
+      "mean_G": 0.9026,
+      "mean_B": 0.911,
+      "std": 0.034,
+      "n_samples": 20
+    },
+    "25ppm": {
+      "class_index": 2,
+      "mean_R": 0.9276,
+      "mean_G": 0.7662,
+      "mean_B": 0.8123,
+      "std": 0.0702,
+      "n_samples": 20
+    },
+    "50ppm": {
+      "class_index": 3,
+      "mean_R": 0.9073,
+      "mean_G": 0.5898,
+      "mean_B": 0.6835,
+      "std": 0.1355,
+      "n_samples": 20
+    },
+    "100ppm": {
+      "class_index": 4,
+      "mean_R": 0.9015,
+      "mean_G": 0.4798,
+      "mean_B": 0.6023,
+      "std": 0.1797,
+      "n_samples": 20
+    }
+  }
+}
